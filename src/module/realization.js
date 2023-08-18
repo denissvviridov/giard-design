@@ -54,11 +54,17 @@ export function realization() {
 
         window.addEventListener("scroll", closeOnScroll);
 
-        function closeOnScroll() {
+        function closeOnScroll(e) {
             let scrollDistance = window.scrollY;
-            let distanceBlock = wrap2.offsetTop + 300;
+            let distanceBlock = wrap2.offsetTop - 300;
 
-            console.log(distanceBlock)
+            let distanceBlockDown = wrap2.offsetTop + 600;
+
+
+
+            console.log(distanceBlockDown)
+
+            console.log(scrollDistance)
 
             if (scrollDistance < distanceBlock) {
                 gradientUp.style.display = "none";
@@ -67,6 +73,15 @@ export function realization() {
                     gradientUp.style.display = "flex";
                 }
             }
+
+            if (scrollDistance > distanceBlockDown) {
+                gradientUp.style.display = "none";
+
+            }
+
+
+
+
         }
     }
 }
