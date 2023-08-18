@@ -530,6 +530,14 @@ title {
     width: 290px;
   }
 }
+@media screen and (max-width: 375px) {
+  .realization .wrap {
+    padding: 5px;
+  }
+  .realization .wrap .projects_block .container .grid-masonry .grid-item {
+    width: 250px;
+  }
+}
 .modal-window {
   position: fixed;
   top: 50%;

@@ -127,6 +127,24 @@
         }
       }
     }
-
   }
 }
+
+@media screen and (max-width: 375px) {
+
+  .realization {
+    .wrap {
+      padding: 5px;
+      .projects_block {
+        .container {
+          .grid-masonry {
+            .grid-item {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
