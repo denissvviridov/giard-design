@@ -12,14 +12,14 @@ export function animation() {
 
         if (y >= yBlock) {
             servicesBlock.style.animationName = 'slidein'
-            servicesBlock.style.animationDuration = '1s'
+            servicesBlock.style.animationDuration = '2s'
         } else {
             servicesBlock.style.animationName = ''
         }
 
         if (y >= yAbout) {
             aboutBlock.style.animationName = 'slideAbout'
-            aboutBlock.style.animationDuration = '1s'
+            aboutBlock.style.animationDuration = '2s'
         } else {
             aboutBlock.style.animationName = ''
         }

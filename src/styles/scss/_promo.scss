@@ -17,8 +17,7 @@
 
     .info {
 
-      animation-duration: 1s;
-      animation-name: slidePromo;
+
 
       .title {
         font-family: "Monserrat";
@@ -26,6 +25,7 @@
         font-size: 60px;
         line-height: 70px;
         margin-bottom: 44px;
+
       }
 
       .description {
@@ -35,6 +35,9 @@
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 72px;
+
+        animation-duration: 2s;
+        animation-name: slidePromo;
       }
 
       .btn-wrap {
@@ -119,7 +122,7 @@
   }
 
   to {
-    margin-left: 10%;
+    margin-left: 0%;
     width: 100%;
   }
 }
