@@ -30,6 +30,7 @@
     height: 370px;
     background: white;
     border-radius: 28px;
+    transition: .2s;
     padding: 48px 40px 48px 40px;
 
     .icon {
@@ -86,6 +87,10 @@
 
     .btn:hover {
     }
+  }
+  .project:hover{
+
+    background: #e3e3e3;
   }
 }
 

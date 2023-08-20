@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,400&display=swap");
 * {
@@ -51,6 +52,37 @@ title {
 
 .projects .project .btn {
   border: none;
+}
+
+.underline-one {
+  color: #00bfff; /* Цвет обычной ссылки */
+  position: relative;
+  cursor: pointer;
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.underline-one:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px; /* Высота линии */
+  background-color: green; /* Цвет подчеркивания при исчезании линии*/
+  transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px; /* Высота линии */
+  background-color: #04720d; /* Цвет подчеркивания при появлении линии*/
+  transition: width 0.5s; /* Время эффекта */
 }
 
 .header {
@@ -349,6 +381,7 @@ title {
   height: 370px;
   background: white;
   border-radius: 28px;
+  transition: 0.2s;
   padding: 48px 40px 48px 40px;
 }
 .projects .project .icon {
@@ -396,6 +429,10 @@ title {
 .projects .project .btn span {
   margin-left: 5px;
 }
+.projects .project:hover {
+  background: #e3e3e3;
+}
+
 @media screen and (max-width: 353px) {
   .services .projects .project {
     min-height: 440px;
