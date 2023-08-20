@@ -1,14 +1,15 @@
 import Masonry from "masonry-layout";
 
+
+// this function creates a gallery algorithm on the grid masonry library.
+
 export function realization() {
     let wrap = document.querySelector(".realization .wrap .projects_block");
     let wrap2 = document.querySelector(".realization .wrap");
     let btnShowMore = document.querySelector(".show-more");
     let btnBackMore = document.querySelector(".back-more");
     let gradientUp = document.querySelector(".gradient-up");
-
     let position = 0;
-
     let positionBottomGradient = 50;
 
     window.onload = () => {
@@ -57,14 +58,8 @@ export function realization() {
         function closeOnScroll(e) {
             let scrollDistance = window.scrollY;
             let distanceBlock = wrap2.offsetTop - 300;
-
             let distanceBlockDown = wrap2.offsetTop + 600;
 
-
-
-            console.log(distanceBlockDown)
-
-            console.log(scrollDistance)
 
             if (scrollDistance < distanceBlock) {
                 gradientUp.style.display = "none";
@@ -73,15 +68,10 @@ export function realization() {
                     gradientUp.style.display = "flex";
                 }
             }
-
             if (scrollDistance > distanceBlockDown) {
                 gradientUp.style.display = "none";
 
             }
-
-
-
-
         }
     }
 }

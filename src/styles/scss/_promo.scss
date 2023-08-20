@@ -14,7 +14,12 @@
     justify-content: center;
     align-items: center;
 
+
     .info {
+
+      animation-duration: 2s;
+      animation-name: slidePromo;
+
       .title {
         font-family: "Monserrat";
         font-weight: 500;
@@ -104,6 +109,18 @@
         background: white;
       }
     }
+  }
+}
+
+@keyframes slidePromo {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 15%;
+    width: 100%;
   }
 }
 
