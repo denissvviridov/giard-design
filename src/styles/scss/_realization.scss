@@ -104,11 +104,32 @@
 
 
 @media screen and (max-width: 991px) {
-  .container {
-    margin: 0 auto;
-
-    .grid-item {
-      width: 300px;
+  .realization {
+    .wrap {
+      .projects_block {
+        .container {
+          .grid-masonry {
+            .grid-item {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .realization {
+    .wrap {
+      .projects_block {
+        .container {
+          .grid-masonry {
+            .grid-item {
+              width: 190px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -121,7 +142,7 @@
         .container {
           .grid-masonry {
             .grid-item {
-              width: 290px;
+              width: 100%;
             }
           }
         }

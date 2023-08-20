@@ -598,16 +598,18 @@ title {
 }
 
 @media screen and (max-width: 991px) {
-  .container {
-    margin: 0 auto;
+  .realization .wrap .projects_block .container .grid-masonry .grid-item {
+    width: 250px;
   }
-  .container .grid-item {
-    width: 300px;
+}
+@media screen and (max-width: 767px) {
+  .realization .wrap .projects_block .container .grid-masonry .grid-item {
+    width: 190px;
   }
 }
 @media screen and (max-width: 424px) {
   .realization .wrap .projects_block .container .grid-masonry .grid-item {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 375px) {
