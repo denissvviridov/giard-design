@@ -229,7 +229,7 @@ title {
   align-items: center;
 }
 .promo .content .info {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: slidePromo;
 }
 .promo .content .info .title {
@@ -315,7 +315,7 @@ title {
     width: 300%;
   }
   to {
-    margin-left: 15%;
+    margin-left: 10%;
     width: 100%;
   }
 }
