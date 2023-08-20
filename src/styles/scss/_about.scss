@@ -28,7 +28,6 @@
       flex-direction: column;
       gap: 40px;
       color: white;
-      padding: 20px;
 
       .small-d {
         color: white;
@@ -58,10 +57,29 @@
   .about {
     flex-wrap: wrap;
 
-    .info{
-      .content{
-        padding: 10px;
+    .info {
+      .content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 240px) {
+  .about {
+    flex-wrap: wrap;
+
+    .info {
+      .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .description-d {
+          display: flex;
+
+        }
       }
     }
   }

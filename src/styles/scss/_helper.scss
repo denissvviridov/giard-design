@@ -24,3 +24,19 @@ li {
 title{
   font-family: 'Montserrat';
 }
+
+.btn-outline:hover{
+  transition: .2s ease-in-out;
+  background: rgba(108, 250, 190, 0.04);
+  transform: scale(1.1);
+}
+.btn-success:hover{
+  transition: .2s ease-in-out;
+
+  background: #0a8a0a;
+  transform: scale(1.1);
+}
+
+.projects .project .btn{
+  border: none;
+}

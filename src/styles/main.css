@@ -37,6 +37,22 @@ title {
   font-family: "Montserrat";
 }
 
+.btn-outline:hover {
+  transition: 0.2s ease-in-out;
+  background: rgba(108, 250, 190, 0.04);
+  transform: scale(1.1);
+}
+
+.btn-success:hover {
+  transition: 0.2s ease-in-out;
+  background: #0a8a0a;
+  transform: scale(1.1);
+}
+
+.projects .project .btn {
+  border: none;
+}
+
 .header {
   width: 100%;
   height: 72px;
@@ -108,10 +124,9 @@ title {
   text-shadow: 0 4px 4px rgb(108, 108, 108);
 }
 .header__container .navbar .navbar-item input[type=search] {
-  background: #f1f1f1 url(http://zornet.ru/ZORNET-RU/ZR/Alinuversa/zorner-ru/podsan.png) no-repeat 9px center;
   border: solid 4px #b1aeae;
   padding: 10px 8px 10px 35px;
-  width: 50px;
+  width: 30px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -123,8 +138,22 @@ title {
   background-color: #f5f5f5;
   outline: none;
 }
+.header__container .navbar .navbar-item:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 800;
+}
+.header__container .navbar .navbar-item:last-child svg {
+  position: absolute;
+  right: 18px;
+}
 
 @media screen and (max-width: 769px) {
+  .header .title {
+    font-size: 16px;
+  }
   .header .menu_btn {
     display: flex;
   }
@@ -272,11 +301,11 @@ title {
     padding: 20px 20px;
   }
   .promo .content .info .title {
-    font-size: 30px;
+    font-size: 26px;
   }
   .promo .content .info .description {
     padding: 0 50px 0 50px;
-    font-size: 11px;
+    font-size: 16px;
   }
   .promo .content .info .btn-wrap {
     padding-top: 44px;
@@ -287,6 +316,7 @@ title {
   }
   .promo .content .info .btn-wrap button:nth-child(2) {
     width: 200px;
+    margin-bottom: 80px;
   }
 }
 .services {
@@ -409,7 +439,6 @@ title {
   flex-direction: column;
   gap: 40px;
   color: white;
-  padding: 20px;
 }
 .about .info .content .small-d {
   color: white;
@@ -431,7 +460,21 @@ title {
     flex-wrap: wrap;
   }
   .about .info .content {
-    padding: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 240px) {
+  .about {
+    flex-wrap: wrap;
+  }
+  .about .info .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about .info .content .description-d {
+    display: flex;
   }
 }
 .realization {
@@ -596,6 +639,7 @@ title {
   align-items: center;
 }
 .contacts .content .title-d {
+  word-wrap: break-word;
   max-width: 600px;
   color: #f5f0ec;
   font-size: 40px;
@@ -637,17 +681,20 @@ title {
 
 @media screen and (max-width: 441px) {
   .contacts .content {
-    padding: 110px 0 160px 0;
+    padding: 110px 20px 160px 20px;
   }
 }
 @media screen and (max-width: 305px) {
   .contacts .content {
-    text-wrap: revert;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     gap: 50px;
-    padding: 110px 10px 160px 10px;
   }
   .contacts .content .title-d {
+    line-height: 50px;
     font-size: 30px;
+    width: 100px;
   }
 }
 .footer {
@@ -792,7 +839,24 @@ title {
   gap: 10px;
   margin-top: 100px;
 }
-.mobile_menu .content .close {
+.mobile_menu .content ul li a {
+  color: grey;
+  font-size: 15px;
+}
+.mobile_menu .content ul .search-block input[type=search] {
+  border: solid 4px #b1aeae;
+  width: 70%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+.mobile_menu .content ul .search-block input[type=search]:focus {
+  border: none;
+  background-color: #f5f5f5;
+  outline: none;
+}
+.mobile_menu .close {
   position: absolute;
   right: 0;
   top: 0;

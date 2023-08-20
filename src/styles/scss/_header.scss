@@ -75,10 +75,10 @@
         }
 
         input[type="search"] {
-          background: #f1f1f1 url(http://zornet.ru/ZORNET-RU/ZR/Alinuversa/zorner-ru/podsan.png) no-repeat 9px center;
+          //background: #f1f1f1 url('') no-repeat 9px center;
           border: solid 4px #b1aeae;
           padding: 10px 8px 10px 35px;
-          width: 50px;
+          width: 30px;
           -webkit-transition: all 0.5s;
           -moz-transition: all 0.5s;
           transition: all 0.5s;
@@ -92,6 +92,16 @@
           outline: none;
         }
       }
+      .navbar-item:last-child{
+        display: flex;justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 800;
+        svg{
+          position: absolute;
+          right: 18px;
+        }
+      }
     }
   }
 }
@@ -103,6 +113,9 @@
 @media screen and (max-width: 769px) {
   .header {
 
+    .title{
+      font-size: 16px ;
+    }
     .menu_btn{
       display: flex;
     }
